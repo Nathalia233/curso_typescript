@@ -9,9 +9,9 @@ console.log("ola " + nome + " seja bem vindo!");
      nome: string;
      valor: number;
      
-     constructor(produtoNome, produtoValor) {
+     constructor(produtoNome: string, produtoValor: number) {
          this.nome = produtoNome;
-         this.nome = produtoValor;
+         this.valor = produtoValor;
      }
  }
  const playstation5 = new Produto ("playstation 5 ", 5000);

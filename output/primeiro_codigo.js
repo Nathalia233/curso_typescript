@@ -1,14 +1,13 @@
 "use strict";
 console.log("hello world este é meu primeiro codigo typescript");
 console.log("================================================");
-var nome = "joao";
+const nome = "joao";
 console.log("ola " + nome + " seja bem vindo!");
 console.log("================================================");
-var Produto = /** @class */ (function () {
-    function Produto(produtoNome, produtoValor) {
+class Produto {
+    constructor(produtoNome, produtoValor) {
         this.nome = produtoNome;
         this.valor = produtoValor;
     }
-    return Produto;
-}());
-var playstation5 = new Produto("playstation 5 ", 5000);
+}
+const playstation5 = new Produto("playstation 5 ", 5000);
