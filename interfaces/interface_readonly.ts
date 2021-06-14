@@ -13,6 +13,6 @@ const curso: ICurso = {
     classificaçoes: 5
 }
 
-curso.titulo = "php 8";
+//curso.titulo = "php 8";
 
 console.log(curso);
