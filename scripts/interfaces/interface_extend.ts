@@ -10,12 +10,12 @@ interface IPessoa extends Modelo{
     idade?: number;
 }
 
-interface Usuario extends IPessoa {
+interface IUsuario extends IPessoa {
     email: string;
     senha: string;
 }
 
-const joao: Usuario = {
+const joao: IUsuario = {
     email: "joao@hcode.com.br",
     id: 1,
     nome: "joao rangel",

@@ -28,3 +28,7 @@ class CNPJ extends Documento {
 _CNPJ_numero = new WeakMap();
 const rg = new Documento();
 console.log(rg.mostrarDoumento());
+const cnpj = new CNPJ();
+console.log(cnpj.mostrarCNPJ());
+//console.log("RG:" + rg.valor);
+//console.log("RG:" + rg.#numero);
