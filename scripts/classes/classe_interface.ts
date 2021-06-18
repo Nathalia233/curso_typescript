@@ -1,10 +1,10 @@
-/*interface IEmail{
-    name: string,
+interface IEmailv2{
+    nome: string,
     email: string,
 }
 
 interface INotificaçoesv2 {
-    eviar(usuario: MeuUsuariov2): boolean;
+    enviar(usuario: MeuUsuariov2): boolean;
 }
 
 interface MeuUsuariov2 {
@@ -18,21 +18,23 @@ abstract class Notificaçoesv2{
     abstract enviar(usuario: MeuUsuariov2): boolean;
 }
 
-class Emailv2 extends Notificaçoesv2 implements  INotificaçoesv2, IEmail{
+class Emailv2 extends Notificaçoesv2 implements  INotificaçoesv2, IEmailv2{
 
-    private name: string;
-    private email: string;
+    nome: string;
+    email: string;
+    usuario: MeuUsuariov2;
 
     constructor(usuario: MeuUsuariov2){
         super(), 
-        this.name = usuario.nome;
+        this.nome = usuario.nome;
         this.email = usuario.email;
+        this.usuario = usuario;
     }
-
-    enviar(usuario: MeuUsuariov2): boolean {
-        console.log(`enviando email para o usuario ${usuario.email}...`);
+    enviar(usuario: MeuUsuariov2): boolean{
+        console.log(`enviando email para o usuario${this.email}...`)
         return true;
     }
+
 }
 class SMSv2 extends Notificaçoesv2 {
     enviar(usuario: MeuUsuariov2): boolean {
@@ -62,4 +64,3 @@ new Androidv2().enviar({
     telefone: "119212345678",
     idAndroid: "jhdsahdkhahsdkas"
 });
-/*/
