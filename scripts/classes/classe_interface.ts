@@ -48,11 +48,11 @@ class Androidv2 extends Notificaçoesv2 {
         return true;
     }
 }
-new Emailv2().enviar({
+/*new Emailv2().enviar({
     nome: "joao",
     email: "joao@hcode.com.br",
     telefone: "119212345678"
-});
+});*/
 new SMSv2().enviar({
     nome: "joao",
     email: "joao@hcode.com.br",
