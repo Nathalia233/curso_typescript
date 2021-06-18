@@ -3,14 +3,20 @@ interface IEmailv2{
     email: string,
 }
 
+interface ITelefonev2 {
+    nome: string,
+    email: string,
+    telefone: number
+}
 interface INotificaçoesv2 {
     enviar(usuario: MeuUsuariov2): boolean;
+    
 }
 
 interface MeuUsuariov2 {
     nome: string;
     email: string;
-    telefone: string;
+    telefone: number;
     idAndroid?: string;
 }
 
@@ -36,7 +42,19 @@ class Emailv2 extends Notificaçoesv2 implements  INotificaçoesv2, IEmailv2{
     }
 
 }
-class SMSv2 extends Notificaçoesv2 {
+class SMSv2 extends Notificaçoesv2 implements  INotificaçoesv2, ITelefonev2 {
+
+    nome: string;
+    email: string;
+    telefone: number;
+
+    constructor(usuario: MeuUsuariov2){
+        super() 
+        this.nome = usuario.nome; 
+        this.email = usuario.email;
+        this.telefone = usuario.telefone;
+}
+
     enviar(usuario: MeuUsuariov2): boolean {
         console.log(`enviando SMS para o usuario ${usuario.telefone}...`);
         return true;
@@ -51,16 +69,16 @@ class Androidv2 extends Notificaçoesv2 {
 /*new Emailv2().enviar({
     nome: "joao",
     email: "joao@hcode.com.br",
-    telefone: "119212345678"
-});*/
+    telefone: 119212345678
+});
 new SMSv2().enviar({
     nome: "joao",
     email: "joao@hcode.com.br",
-    telefone: "119212345678"
+    telefone: 119212345678
 });
 new Androidv2().enviar({
     nome: "joao",
     email: "joao@hcode.com.br",
-    telefone: "119212345678",
+    telefone: 119212345678,
     idAndroid: "jhdsahdkhahsdkas"
-});
+});*/
