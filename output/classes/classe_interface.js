@@ -1,66 +1,44 @@
 "use strict";
-/*interface IEmail{
-    name: string,
-    email: string,
+class Notificaçoesv2 {
 }
-
-interface INotificaçoesv2 {
-    eviar(usuario: MeuUsuariov2): boolean;
-}
-
-interface MeuUsuariov2 {
-    nome: string;
-    email: string;
-    telefone: string;
-    idAndroid?: string;
-}
-
-abstract class Notificaçoesv2{
-    abstract enviar(usuario: MeuUsuariov2): boolean;
-}
-
-class Emailv2 extends Notificaçoesv2 implements  INotificaçoesv2, IEmail{
-
-    private name: string;
-    private email: string;
-
-    constructor(usuario: MeuUsuariov2){
+class Emailv2 extends Notificaçoesv2 {
+    constructor(usuario) {
         super(),
-        this.name = usuario.nome;
+            this.nome = usuario.nome;
         this.email = usuario.email;
+        this.usuario = usuario;
     }
-
-    enviar(usuario: MeuUsuariov2): boolean {
-        console.log(`enviando email para o usuario ${usuario.email}...`);
+    enviar(usuario) {
+        console.log(`enviando email para o usuario${this.email}...`);
         return true;
     }
 }
 class SMSv2 extends Notificaçoesv2 {
-    enviar(usuario: MeuUsuariov2): boolean {
-        console.log(`enviando SMS para o usuario ${usuario.telefone}...`);
+    constructor(usuario) {
+        super();
+        this.nome = usuario.nome;
+        this.email = usuario.email;
+        this.numero = usuario.telefone;
+    }
+    ;
+    enviar(usuario) {
+        console.log(`enviando SMS para o usuario ${this.numero}...`);
         return true;
     }
 }
 class Androidv2 extends Notificaçoesv2 {
-    enviar(usuario: MeuUsuariov2): boolean {
+    enviar(usuario) {
         console.log(`enviando mensagem para o usuario do android ${usuario.idAndroid}...`);
         return true;
     }
 }
-new Emailv2().enviar({
+new Emailv2({
     nome: "joao",
     email: "joao@hcode.com.br",
-    telefone: "119212345678"
+    telefone: 119212345678
 });
-new SMSv2().enviar({
+new SMSv2({
     nome: "joao",
     email: "joao@hcode.com.br",
-    telefone: "119212345678"
+    telefone: 119212345678
 });
-new Androidv2().enviar({
-    nome: "joao",
-    email: "joao@hcode.com.br",
-    telefone: "119212345678",
-    idAndroid: "jhdsahdkhahsdkas"
-});
-/*/ 
