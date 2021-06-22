@@ -18,3 +18,4 @@ class Casa extends Domicilio {
 }
 const casadoHomer = new Casa("rosa", { cidade: "springfield" });
 console.log(casadoHomer.entrarNaCasa());
+//# sourceMappingURL=classe_protected.js.map

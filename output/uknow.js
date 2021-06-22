@@ -9,4 +9,4 @@ console.log("=============================");
 const informaçao = 150;
 const informaçaoDesconhecida = 250;
 const primeiroNumero = informaçao;
-//const segundoNumero: number = informaçaoDesconhecida
+//# sourceMappingURL=uknow.js.map

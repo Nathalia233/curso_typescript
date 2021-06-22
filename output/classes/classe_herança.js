@@ -13,3 +13,4 @@ class Cliente extends Cadastro {
     }
 }
 const joaoo = new Cliente("joao", new Date("2000-01-01"), "joaoo@hcode.com", "gyzu");
+//# sourceMappingURL=classe_heran%C3%A7a.js.map

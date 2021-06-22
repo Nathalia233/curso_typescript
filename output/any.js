@@ -10,3 +10,4 @@ despesaFixa = 150;
 despesaVariavel = 320;
 console.log(despesaFixa + despesaVariavel);
 let itens = [];
+//# sourceMappingURL=any.js.map

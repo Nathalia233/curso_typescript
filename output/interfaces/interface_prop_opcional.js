@@ -5,3 +5,4 @@ const produtoDados = {
     descriçao: "meu notebook superpotente",
     dataValidade: new Date(2002, 11, 1),
 };
+//# sourceMappingURL=interface_prop_opcional.js.map

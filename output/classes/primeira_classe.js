@@ -15,3 +15,4 @@ const marcus = new Pessoa("marcus ribeiro", 19, 2);
 ronaldo.nome = "ronaldo";
 console.log("pessoa: " + ronaldo);
 console.log("pessoa: " + marcus);
+//# sourceMappingURL=primeira_classe.js.map

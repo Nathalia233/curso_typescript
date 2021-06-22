@@ -8,3 +8,4 @@ if (new Date().getDate() === 15) {
     minhaVariavel = "hoje é dia 15";
 }
 console.log(minhaVariavel);
+//# sourceMappingURL=null_undefined.js.map

@@ -5,3 +5,4 @@ function mostrarFrase() {
     console.log("aprendendo typescript");
 }
 mostrarFrase();
+//# sourceMappingURL=void.js.map

@@ -14,3 +14,4 @@ const numero = {
     }
 };
 console.log(numero.realizarProcessamento(numero.valor));
+//# sourceMappingURL=interfaces_genericas.js.map

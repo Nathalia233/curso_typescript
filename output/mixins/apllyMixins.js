@@ -9,3 +9,4 @@ function applyMixins(derivedCtor, constructors) {
     });
 }
 exports.default = applyMixins;
+//# sourceMappingURL=apllyMixins.js.map

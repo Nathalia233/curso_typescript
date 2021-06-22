@@ -6,5 +6,5 @@ const curso = {
     cargaHoraria: 10,
     classificaçoes: 5
 };
-//curso.titulo = "php 8";
 console.log(curso);
+//# sourceMappingURL=interface_readonly.js.map

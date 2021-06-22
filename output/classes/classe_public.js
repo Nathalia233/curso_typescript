@@ -10,3 +10,4 @@ class Veiculo {
 const carro = new Veiculo("branco");
 carro.cor = "preto";
 console.log(carro.cor);
+//# sourceMappingURL=classe_public.js.map

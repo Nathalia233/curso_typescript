@@ -7,8 +7,8 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
 var _Documento_numero, _CNPJ_numero;
 class Documento {
     constructor() {
-        this.valor = "123456789-01"; // TS
-        _Documento_numero.set(this, 35); // ecmascript
+        this.valor = "123456789-01";
+        _Documento_numero.set(this, 35);
     }
     mostrarDoumento() {
         return __classPrivateFieldGet(this, _Documento_numero, "f");
@@ -18,7 +18,6 @@ _Documento_numero = new WeakMap();
 class CNPJ extends Documento {
     constructor() {
         super(...arguments);
-        //private valor: string = "25698745632-01"
         _CNPJ_numero.set(this, 50);
     }
     mostrarCNPJ() {
@@ -30,5 +29,4 @@ const rg = new Documento();
 console.log(rg.mostrarDoumento());
 const cnpj = new CNPJ();
 console.log(cnpj.mostrarCNPJ());
-//console.log("RG:" + rg.valor);
-//console.log("RG:" + rg.#numero);
+//# sourceMappingURL=classe_private_ecma_ts.js.map

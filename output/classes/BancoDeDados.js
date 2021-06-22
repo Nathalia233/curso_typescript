@@ -22,3 +22,4 @@ exports.BancoDeDados = BancoDeDados;
 BancoDeDados.LOCAL = "127.0.0.1";
 BancoDeDados.TIPO_MYSQL = "MySQL";
 BancoDeDados.TIPO_SQLSERVER = "SQL Server";
+//# sourceMappingURL=BancoDeDados.js.map

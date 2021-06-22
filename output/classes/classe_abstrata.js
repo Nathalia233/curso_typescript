@@ -35,3 +35,4 @@ new Android().enviar({
     telefone: "119212345678",
     idAndroid: "jhdsahdkhahsdkas"
 });
+//# sourceMappingURL=classe_abstrata.js.map

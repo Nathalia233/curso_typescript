@@ -42,3 +42,4 @@ new SMSv2({
     email: "joao@hcode.com.br",
     telefone: 119212345678
 });
+//# sourceMappingURL=classe_interface.js.map

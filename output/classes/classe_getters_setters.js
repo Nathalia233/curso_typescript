@@ -23,3 +23,4 @@ catch (e) {
     console.log(e);
 }
 console.log(permissao.nome);
+//# sourceMappingURL=classe_getters_setters.js.map

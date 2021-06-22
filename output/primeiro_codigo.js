@@ -11,3 +11,4 @@ class Produto {
     }
 }
 const playstation5 = new Produto("playstation 5 ", 5000);
+//# sourceMappingURL=primeiro_codigo.js.map

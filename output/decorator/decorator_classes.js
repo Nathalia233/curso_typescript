@@ -20,3 +20,4 @@ SegundaClasse = __decorate([
     utils_1.log
 ], SegundaClasse);
 console.log(new SegundaClasse());
+//# sourceMappingURL=decorator_classes.js.map

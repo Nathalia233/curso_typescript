@@ -17,3 +17,4 @@ new meiosDeNotifica_oes_1.Android().enviar({
     telefone: "119212345678",
     idAndroid: "jhdsahdkhahsdkas"
 });
+//# sourceMappingURL=index.js.map

@@ -14,3 +14,4 @@ function log(constructor) {
     };
 }
 exports.log = log;
+//# sourceMappingURL=index.js.map

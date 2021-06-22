@@ -20,3 +20,4 @@ console.log("================");
 const joaoRangel = new Professor("joao rangel", 25, "typesript");
 console.log(joaoRangel.seApresentar());
 console.log(joaoRangel.dizerNotas(8, 10, 5.5, 7.5));
+//# sourceMappingURL=classe_metodo.js.map

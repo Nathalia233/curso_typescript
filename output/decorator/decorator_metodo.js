@@ -20,3 +20,4 @@ __decorate([
 ], TratarMensagem.prototype, "dizerMensagem", null);
 const instancia = new TratarMensagem();
 console.log(instancia.dizerMensagem("ola, seja bem vindo", "HCode"));
+//# sourceMappingURL=decorator_metodo.js.map

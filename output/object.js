@@ -8,3 +8,4 @@ configuraçaoServidor = {
     servidor: "google cloud"
 };
 configuraçaoServidor = new Array();
+//# sourceMappingURL=object.js.map

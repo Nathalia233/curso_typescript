@@ -18,3 +18,4 @@ calculadora = {
     somar: adiçao,
     subtrair: subtrair,
 };
+//# sourceMappingURL=interface_fun%C3%A7oes.js.map

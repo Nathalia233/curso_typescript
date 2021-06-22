@@ -20,3 +20,4 @@ var autenticaçao;
     }
     autenticaçao.Recuperaçao = Recuperaçao;
 })(autenticaçao || (autenticaçao = {}));
+//# sourceMappingURL=index.js.map

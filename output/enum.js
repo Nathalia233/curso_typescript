@@ -8,3 +8,4 @@ var Permission;
 console.log(Permission.ADMIN);
 console.log(Permission.USER);
 console.log(Permission.READONLY);
+//# sourceMappingURL=enum.js.map

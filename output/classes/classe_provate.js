@@ -24,6 +24,6 @@ class Banco24Horas extends Banco {
         return this.sacaraDoCaixa(qtd);
     }
 }
-//const nubank new = Banco();
 const banco24 = new Banco24Horas();
 Banco24Horas.sacaraDoCaixa(25000);
+//# sourceMappingURL=classe_provate.js.map

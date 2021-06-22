@@ -27,3 +27,4 @@ __decorate([
 const cachorro = new Animal("pluto");
 cachorro.nome = "Snoopy";
 console.log("cachorro");
+//# sourceMappingURL=decorator_atributos.js.map

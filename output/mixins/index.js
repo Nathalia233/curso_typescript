@@ -33,3 +33,4 @@ const Produto = new Sofa("meu sofa");
 console.log(Produto.vender(25));
 console.log(Produto.empurrar(50));
 console.log(Produto.nome);
+//# sourceMappingURL=index.js.map

@@ -26,3 +26,4 @@ const conexaoBanco = BancoDeDados.factory({
     ip: BancoDeDados.LOCAL
 });
 console.log(conexaoBanco);
+//# sourceMappingURL=classe_prop_metodo_estatico.js.map

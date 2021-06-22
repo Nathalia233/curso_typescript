@@ -13,4 +13,4 @@ let menu = {
 let minhasTarefas;
 minhasTarefas = ["estudar typescript", "estudar javascript", "estudar php8",];
 console.log(minhasTarefas[0]);
-// nao achei o piper no teclado do pc 
+//# sourceMappingURL=interface_array.js.map

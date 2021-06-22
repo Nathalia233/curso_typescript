@@ -8,3 +8,4 @@ const joao = {
     created_at: new Date().getTime(),
     updated_at: new Date().getTime()
 };
+//# sourceMappingURL=interface_extend.js.map

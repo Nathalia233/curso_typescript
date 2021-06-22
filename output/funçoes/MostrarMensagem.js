@@ -5,3 +5,4 @@ function mostrarMensagem(texto) {
     return true;
 }
 exports.default = mostrarMensagem;
+//# sourceMappingURL=MostrarMensagem.js.map
