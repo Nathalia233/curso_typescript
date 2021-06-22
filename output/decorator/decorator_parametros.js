@@ -8,22 +8,29 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-function decoratorMetodo(target, property, descriptor) {
-    descriptor.value = (...args) => {
-        return args.map(item => item.toLowerCase());
-    };
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+require("reflect-metadata");
+function decoratorParametros(target, key, propertyKey) {
+    return Reflect.getMetadata(" design: paramtypes", target, key).map((item) => console.log(item));
 }
-class TratarMensagem {
-    dizerMensagem(...mensagens) {
-        return mensagens;
-    }
+class TratarParametros {
+    metodo1(mensagem) { }
+    metodo2(numero) { }
 }
 __decorate([
-    decoratorMetodo,
+    __param(0, decoratorParametros),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", void 0)
-], TratarMensagem.prototype, "dizerMensagem", null);
-const instancia = new TratarMensagem();
-console.log(instancia.dizerMensagem("ola, seja bem vindo", "HCode"));
-//# sourceMappingURL=decorator_metodo.js.map
+], TratarParametros.prototype, "metodo1", null);
+__decorate([
+    __param(0, decoratorParametros),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Number]),
+    __metadata("design:returntype", void 0)
+], TratarParametros.prototype, "metodo2", null);
+new TratarParametros();
+//# sourceMappingURL=decorator_parametros.js.map
